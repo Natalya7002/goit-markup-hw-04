@@ -90,6 +90,25 @@ body {
   padding: 24px 0;
 }
 
+.nav-link.active {
+  border-bottom: 4px solid rgba(64, 75, 191, 1);
+}
+
+/* .link-after::after {
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 28px;
+  background-color: rgba(64, 75, 191, 1);
+  content: "";
+} */
+
+.link-after {
+  color: rgba(64, 75, 191, 1);
+}
+
 .address-link {
   display: block;
   padding: 24px 0;
@@ -341,28 +360,31 @@ body {
   position: relative;
   width: 40px;
   height: 40px;
+  padding: 12px;
   top: -0.00006103515625px;
   /* angle: -0 deg; */
   background-color: rgba(77, 90, 229, 1);
   border-radius: 20px;
 }
 
-.icon-aside {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-}
-
 .aside-link-icon {
+  width: 16px;
+  height: 16px;
   fill: white;
   transition-property: rgba(244, 244, 253, 1);
   transition-duration: 250ms;
 }
 
-.aside-link-icon:hover,
-.aside-link-icon:focus {
+.icon-aside:hover,
+.icon-aside:focus {
   fill: rgba(244, 244, 253, 1);
 }
+
+.ellipse:hover,
+.ellipse:focus {
+  background-color: #404bbf;
+}
+
 .social-list {
   display: flex;
   gap: 24px;
