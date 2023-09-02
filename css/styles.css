@@ -131,9 +131,19 @@ body {
 .title-hero {
   width: 1440px;
   height: 600px;
+  margin: 0 auto;
   flex-shrink: 0;
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url("images/people.jpg"); */
 }
 
 .title {
@@ -195,6 +205,39 @@ body {
   overflow: hidden;
 }
 
+.benefits-icon-item {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-benefits {
+  padding-top: 24px;
+  padding-left: 100px;
+}
+
+.benefits-link-icon:hover,
+.benefits-link-icon:focus {
+  stroke: rgba(77, 90, 229, 1);
+}
+
+.benefits-icon-menu {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid rgba(142, 143, 153, 1);
+  background-color: rgba(244, 244, 253, 1);
+  margin-bottom: 8px;
+}
+
+.benefits-link-icon {
+  width: 64px;
+  height: 64px;
+  top: 24px;
+  left: 100px;
+
+  fill: rgba(46, 47, 66, 1);
+}
+
 .benefits-menu {
   display: flex;
   gap: 24px;
@@ -250,14 +293,17 @@ body {
 }
 
 .name-aside {
+  width: 232px;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  margin: 0 auto;
 }
 
 .aside-item {
   background-color: #ffffff;
   width: 264px;
-  height: 380px;
+  height: 428px;
   top: 1248px;
   left: 156px;
   padding: 0px 0px 32px 0px;
@@ -266,10 +312,6 @@ body {
   box-sizing: border-box;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-}
-
-.aside-last {
-  margin: 0;
 }
 
 .aside-title {
@@ -295,6 +337,36 @@ body {
   margin: 8px;
 }
 
+.ellipse {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: -0.00006103515625px;
+  /* angle: -0 deg; */
+  background-color: rgba(77, 90, 229, 1);
+  border-radius: 20px;
+}
+
+.icon-aside {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.aside-link-icon {
+  fill: white;
+  transition-property: rgba(244, 244, 253, 1);
+  transition-duration: 250ms;
+}
+
+.aside-link-icon:hover,
+.aside-link-icon:focus {
+  fill: rgba(244, 244, 253, 1);
+}
+.social-list {
+  display: flex;
+  gap: 24px;
+}
 /* Section Portfolio  */
 .portfolio {
   padding-top: 120px;
@@ -394,4 +466,22 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.social-list-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 16px;
+}
+
+.container-footer {
+  display: flex;
+}
+
+.social-page-footer {
+  padding-left: 120px;
 }
