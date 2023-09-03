@@ -579,8 +579,8 @@ body {
 }
 
 .social-list-item {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 .social-list-text {
@@ -609,16 +609,6 @@ body {
 .aside-link-icon {
   fill: #f4f4fd;
 }
-/* .icon-aside-footer {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .social-list-icon {
   width: 24px;
@@ -630,7 +620,18 @@ body {
   fill: #f4f4fd;
 }
 
-.icon-aside-footer:hover,
-.icon-aside-footer:focus {
+.footer-icon-aside {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-aside:hover,
+.footer-icon-aside:focus {
   background-color: #31d0aa;
 }
